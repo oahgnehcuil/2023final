@@ -2,24 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Example font family */
+            color: #333; /* Font color */
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px; /* Space below each video */
+        }
+
+        .content-between-videos {
+            text-align: left; /* Center-align text */
+            margin-bottom: 30px; /* Space below the content */
+        }
+    </style>
     <title>Group 6</title>
   </head>
-  <body>
-    <h1>hii</h1>
-    <p style="background-image: url('back.png');">Your content here</p>
+  <body style="background-image: url('back.png'); background-size: cover; background-position: center;">
 
-    <!-- Add your video here -->
-    <video width="1200" height="1200" controls>
-      <source src="output.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <video width="1200" height="1200" controls>
-      <source src="rrr.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <video width="1200" height="1200" controls>
-      <source src="ttt.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+      <!-- Video 1 -->
+      <video width="800" height="800" controls>
+        <source src="output.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content-between-videos">
+      <p>
+        In an era where the complexity of existence is often articulated through a barrage of sensory overload, there stands a refreshing divergence in the form of minimalist art. The piece presented here, a captivating digital artwork, exemplifies the core principles of minimalism, yet speaks volumes in its tranquility and measured expression. Through an exploration of form, color, and spatial economy, the art piece invites viewers into a meditative dialogue with simplicity.<br>
+        At first glance, one is struck by the geometric precision of the artwork. It does not seek to replicate the chaotic contours of reality but instead presents an abstract interpretation that is as open-ended as it is definitive. The composition, centered around a primary structure with pronounced edges, harkens to the architectural forms found in urban landscapes. However, it is softened by the deliberate use of color and shading, which imparts a sense of depth and warmth.<br>
+        The palette is a deliberate selection of muted earth tones juxtaposed with hues of sky blue, imparting an essence of nature's own artistry. The sky blue, serene and boundless, invites contemplation of the infinite, while the solid, earthy tones of the structure itself seem to root the piece in the tangible. The gradation of colors suggests a time of day when the sun hovers just out of sight, casting its last light in a display of subtle spectacle—a moment often overlooked in the daily bustle.<br>
+        This artwork transcends mere representation; it does not tell a story but rather sets a stage for the narrative that the viewer brings to it. The stark lines and planes serve as a playground for the mind, encouraging an introspection that is deeply personal. In this space, one can contemplate solitude, stability, or change, as the art becomes a mirror reflecting individual thought and emotion.<br>
+        Moreover, the minimalist aesthetic speaks to a modern yearning for a pause, a space where thought is not obscured by excess. The economy of detail in the piece does not result from a lack of things to say but from a meticulous choice to say more with less. Every line, every shade in this digital canvas is intentional, leaving no room for the superfluous, thereby granting each element a weighted significance.<br>
+        by chatgpt<br>
+      </p>
+    </div>
+
+    <div class="video-container">
+      <!-- Video 2 -->
+      <video width="800" height="800" controls>
+        <source src="ttt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content-between-videos">
+      <p>Content between Video 2 and Video 3</p>
+    </div>
+
+    <div class="video-container">
+      <!-- Video 3 -->
+      <video width="800" height="800" controls>
+        <source src="rrr.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content-between-videos">
+      <p>All rights reserved.</p>
+    </div>
+
   </body>
 </html>
