@@ -1,68 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <style>
-        body {
-            font-family: Arial, sans-serif; /* Example font family */
-            color: #333; /* Font color */
-        }
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-image: url('ting/t_back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.video-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px; /* Added px for width */
+  height: 650px; /* Added px for height */
+  margin-bottom: 30px; /* Space below each video */
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-between-videos{
+  text-align: left;
+  margin-bottom: 30px;
+}
+.tite {
+  color: black;
+  font-size: 64px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <h1 class="tite"><font face="serif">孔品樺</font></h1>
+  <div class="container">
+    <div class="item">
+      <div class="video-container">
+        <video class="video" controls>
+          <source src="catherine's/c1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content-between-videos">
+        <p>夕陽<br><br>
+          紅滾滾的太陽<br>
+          是前往未知樂園的方向。<br>
+          跟著太陽走吧！<br>
+          尋找那神奇的地方。<br><br>
+          以紅色圓形代表太陽，運用長方形與線條向下伸展的方式呈現夕陽落下的感覺。其中一長方形向上伸展以保持畫面平衡。<br>
+        </p>
+      </div>
 
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px; /* Space below each video */
-        }
+      <div class="video-container">
+        <video class="video" controls>
+          <source src="catherine's/c2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content-between-videos">
+        <p>
+          夜晚<br><br>
+          在虛無的空間，<br>
+          黑色色塊  堆疊成了黑夜，<br>
+          為樂園  創造全新的世界！<br><br>
+          以多個長方形與線條隨機散佈的方式形成由白天轉黑夜的意象。另外，將左邊留白和增加三個顏色漸變的長方形讓畫面更有了空間及空氣感。<br>
+        </p>
+      </div>
 
-        .content-between-videos {
-            text-align: left; /* Center-align text */
-            margin-bottom: 30px; /* Space below the content */
-        }
-    </style>
-    <title>Group 6</title>
-  </head>
-  <!--body style="background-image: url('back.png'); background-size: cover; background-position: center;"-->
+      <div class="video-container">
+        <video class="video" controls>
+          <source src="catherine's/c3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content-between-videos">
+        <p>
+          風車<br><br>
+          平靜的夜晚，<br>
+          巨大風車  轉  呀轉。<br>
+          它將迎來全新早晨，<br>
+          與陽光作伴。<br><br>
+          將橢圓形陣列代表風車的葉片，並運用processing的rotate程式碼讓葉片旋轉。在細節上利用線條和方形的隨機散佈呈現風力發電的剛硬機械感。另外，背景以陣列橢圓形等比例放大的方式產生遼闊、延展的感覺。<br>
+        </p>
+      </div>
 
-    <div class="video-container">
-      <!-- Video 1 -->
-      <video width="800" height="800" controls>
-        <source src="output.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="video-container">
+        <video class="video" controls>
+          <source src="catherine's/c4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content-between-videos">
+        <p>
+          破曉<br><br>
+          黑夜消失，白天現形，<br>
+          而曙光的交會，<br>
+          呈現了菱形。<br>
+          這<br>
+          並非樂園的結束，<br>
+          而是為下個指引樂園的『夕陽』<br>
+          再次鋪上前路。<br><br>
+          運用processing x座標加減frameCount，讓線條交會時增加層次感和產生pattern(圖案)，就像不同光影產生的效果。<br><br>
+        </p>
+      </div>
     </div>
-    <div class="content-between-videos">
-      <p>
-        In an era where the complexity of existence is often articulated through a barrage of sensory overload, there stands a refreshing divergence in the form of minimalist art. The piece presented here, a captivating digital artwork, exemplifies the core principles of minimalism, yet speaks volumes in its tranquility and measured expression. Through an exploration of form, color, and spatial economy, the art piece invites viewers into a meditative dialogue with simplicity.<br>
-        At first glance, one is struck by the geometric precision of the artwork. It does not seek to replicate the chaotic contours of reality but instead presents an abstract interpretation that is as open-ended as it is definitive. The composition, centered around a primary structure with pronounced edges, harkens to the architectural forms found in urban landscapes. However, it is softened by the deliberate use of color and shading, which imparts a sense of depth and warmth.<br>
-        The palette is a deliberate selection of muted earth tones juxtaposed with hues of sky blue, imparting an essence of nature's own artistry. The sky blue, serene and boundless, invites contemplation of the infinite, while the solid, earthy tones of the structure itself seem to root the piece in the tangible. The gradation of colors suggests a time of day when the sun hovers just out of sight, casting its last light in a display of subtle spectacle—a moment often overlooked in the daily bustle.<br>
-        This artwork transcends mere representation; it does not tell a story but rather sets a stage for the narrative that the viewer brings to it. The stark lines and planes serve as a playground for the mind, encouraging an introspection that is deeply personal. In this space, one can contemplate solitude, stability, or change, as the art becomes a mirror reflecting individual thought and emotion.<br>
-        Moreover, the minimalist aesthetic speaks to a modern yearning for a pause, a space where thought is not obscured by excess. The economy of detail in the piece does not result from a lack of things to say but from a meticulous choice to say more with less. Every line, every shade in this digital canvas is intentional, leaving no room for the superfluous, thereby granting each element a weighted significance.<br>
-        by chatgpt<br>
-      </p>
-    </div>
-
-    <div class="video-container">
-      <!-- Video 2 -->
-      <video width="800" height="800" controls>
-        <source src="ttt.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="content-between-videos">
-      <p>Content between Video 2 and Video 3</p>
-    </div>
-
-    <div class="video-container">
-      <!-- Video 3 -->
-      <video width="800" height="800" controls>
-        <source src="rrr.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="content-between-videos">
-      <p>All rights reserved.</p>
-    </div>
-
-  </body>
+  </div>
+</body>
 </html>
